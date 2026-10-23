@@ -1,0 +1,1 @@
+cloc . --exclude-dir=.git,node_modules,dist,images,build,mario --exclude-list-file=exclude-file.txt --exclude-ext=md,txt,json,shell
