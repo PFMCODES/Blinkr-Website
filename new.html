@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="../../assets/styles/index.css">
+    <link id="blinkr-theme blinkr-theme-default" rel="stylesheet" href="../../assets/styles/blinkr-purp.css">
+    <link rel="stylesheet" href="../../assets/styles/components.css">
+    <link rel="stylesheet" href="../../assets/styles/tailwind.css">
+    <link rel="shortcut icon" href="../../assets/images/new-page-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/styles/new.css">
+</head>
+<body class="blinkr-page bk-w-full bk-flex-col bk-justify-content select-none">
+    
+    <div class="nav flex items-center justify-between h-[36px] w-full px-4 mt-2">
+    <div class="clock flex text-[var(--accent)] font-medium gap-5 flex-row"></div>
+        <div class="right flex flex-row items-center gap-1 text-[var(--accent)] relative">
+            <a href="./version.html" class="flex items-center justify-center">
+                <button class="bk-btn bk-btn-secondary bk-btn-icon flex items-center justify-center" id="version-info" title="version info">
+                    <svg class="bk-icons icons" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bk-icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 16v-4"></path>
+                    <path d="M12 8h.01"></path>
+                </svg>
+                </button>
+            </a>
+
+            <button class="bk-btn bk-btn-secondary bk-btn-icon flex items-center justify-center" id="customize" title="customize">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 22" fill="none"><path d="M13.5039 12.709C15.5669 12.709 17.2754 14.226 17.5762 16.2051H22.5059C23.058 16.2052 23.5059 16.6529 23.5059 17.2051C23.5059 17.7573 23.058 18.2049 22.5059 18.2051H17.3867C16.8204 19.8036 15.2964 20.9492 13.5039 20.9492C11.5889 20.949 9.97997 19.6417 9.51855 17.8711H1C0.44792 17.871 0.000237143 17.4231 0 16.8711C0 16.3189 0.447774 15.8712 1 15.8711H9.49805C9.92987 14.0581 11.5589 12.7092 13.5039 12.709ZM13.5039 14.709C12.3341 14.7092 11.3848 15.6582 11.3848 16.8291C11.3848 18 12.3341 18.949 13.5039 18.9492C14.6739 18.9492 15.623 18.0002 15.623 16.8291C15.623 15.658 14.6739 14.709 13.5039 14.709ZM9.65625 0C11.5688 5.32858e-05 13.1773 1.30341 13.6416 3.07031H22.0391C22.5912 3.07038 23.0389 3.51823 23.0391 4.07031C23.0391 4.62255 22.5913 5.07024 22.0391 5.07031H13.666C13.2369 6.88754 11.6045 8.24018 9.65625 8.24023C7.65715 8.24007 5.99131 6.81577 5.61621 4.92676H1.02246C0.470371 4.92666 0.0226456 4.47883 0.0224609 3.92676C0.0224609 3.37453 0.470257 2.92685 1.02246 2.92676H5.71289C6.22462 1.23345 7.79605 0.000155491 9.65625 0ZM9.65625 2C8.48557 2.00019 7.53613 2.94939 7.53613 4.12012C7.5362 5.29079 8.48561 6.24004 9.65625 6.24023C10.7206 6.24018 11.5986 5.45496 11.75 4.43262C11.7063 4.32031 11.6816 4.19806 11.6816 4.07031C11.6817 3.95316 11.7022 3.84079 11.7393 3.73633C11.5584 2.74895 10.6958 2.00006 9.65625 2Z" fill="currentColor"/></svg>
+            </button>
+            
+            <button class="bk-btn bk-btn-secondary bk-btn-icon flex items-center justify-center" id="more" title="click for more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+            </button>
+            
+            <a href="./GameCenter/index.html" title="GameCenter" class="flex items-center justify-center">
+                <button class="bk-btn bk-btn-secondary bk-btn-icon flex items-center justify-center" id="GameCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg>
+                </button>
+            </a>
+
+            <div class="pages bk-list k-hidden" style>
+                <a href="./settings/index.html">
+                    <div class="bk-list-item w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
+                        <span class="bk-text-sm">Settings</span>
+                    </div>
+                </a>
+                <a href="./history.html">
+                    <div class="bk-list-item w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-history-icon lucide-history"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
+                        <span class="bk-text-sm">History</span>
+                    </div>
+                </a>
+                <a href="./downloads.html">
+                    <div class="bk-list-item w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-icon lucide-download"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+                        <span class="bk-text-sm">Downloads</span>
+                    </div>
+                </a>
+                <a href="./bookmarks.html">
+                    <div class="bk-list-item w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark-icon lucide-bookmark"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
+                        <span class="bk-text-sm">Bookmarks</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content bk-m-auto group relative flex flex-col items-center justify-center">
+        <div class="text-8xl bk-font bk-color-brand select-none tracking-tight mb-2" style="z-index: 0;">
+            Blinkr
+        </div>
+        <div class="bk-search bk-m-auto bk-w-full">
+            <button class="bk-btn bk-btn-sm bk-p-0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <input id="input" placeholder="Search a topic or type an URL" title="Search a topic or type an URL">
+        </div>
+        
+        <div class="flex bk-gap-4 bk-mt-8" style="flex-direction: row; background: none; align-items: center; justify-content: center;">
+            <div class="flex bk-gap-4" id="shortcutsContainer" style="flex-direction: row; background: none; align-items: center; justify-content: center; margin: 0;"></div>
+            <button class="bk-btn bk-btn-secondary flex items-center justify-center ml-2" id="add-shortcut" title="Add Shortcut" draggable="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="../../assets/scripts/Renderer/pages/new.js"></script>
+    <script type="module" src="../../assets/scripts/Renderer/theme.js"></script>
+    <script>
+  function applyAccentColor() {
+    const accent = localStorage.getItem("blinkr-accent") || "purple";
+    const root = document.documentElement;
+    root.dataset.accent =
+  localStorage.getItem("blinkr-accent") || "purple";
+  }
+
+  applyAccentColor();
+</script>
+</body>
+</html>
